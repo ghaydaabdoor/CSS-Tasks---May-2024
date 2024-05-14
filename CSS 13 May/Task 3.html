@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <style>
+        *{
+            font-family: tahoma;
+        }
+        main{
+            border: dotted 2px;
+            width: fit-content;
+            position: relative;
+        }
+        div{
+            width:100px;
+            height: 100px;
+            display:inline-block;
+        }
+        .red{
+            background-color: red;
+        }
+        #green, #green_relative, #green_absolute{
+            background-color: green;
+        }
+        #green_relative{
+            position:relative;
+            top:20px; 
+            left: 20px;
+        }
+        #green_absolute{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        p{
+            padding-left: 10px;
+            margin-top: 50px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <p>Position: Static</p>
+    <main>
+        <div class="red">One</div>
+        <div id="green">Two</div>
+        <div class="red">Three</div>
+        <div class="red">Four</div>
+    </main>
+
+    <p>Position: Relative</p>
+    <main>
+        <div class="red">One</div>
+        <div id="green_relative">Two</div>
+        <div class="red">Three</div>
+        <div class="red">Four</div>
+    </main>
+
+    <p>Position: Absolute</p>
+    <main>
+        <div class="red">One</div>
+        <div id="green_absolute">Two</div>
+        <div class="red">Three</div>
+        <div class="red">Four</div>
+    </main>
+</body>
+</html>

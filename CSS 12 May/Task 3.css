@@ -1,0 +1,39 @@
+body{
+    background-color:rgb(248, 238, 222)
+}
+div{
+    background-color: white;
+    width:600px;
+    padding:40px 10px 10px 5px;
+    margin-bottom:20px;
+    border:solid 3px rgb(173, 171, 171);
+}
+#div2{
+    border:dashed;
+}
+.ipsum{
+    background-color: rgb(239, 197, 118);
+    padding: 0.5px 5px;
+}
+.quis{
+    background-color: rgb(189, 187, 240);
+    padding: 0.5px 5px;
+}
+#p2{
+    border: dashed red;
+    background-color:rgb(252, 252, 242);
+    padding:2px;
+}
+#p3{
+    color: purple;
+}
+div{
+    position: relative;
+}
+p::before{
+    content: 'Heading Num.2';
+    position: absolute;
+    top: 18px;
+    font-size: 19px;
+    font-weight: bold;
+}
