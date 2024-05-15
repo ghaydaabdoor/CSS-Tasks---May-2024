@@ -1,0 +1,143 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#container{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+}
+img{
+    width:100%;
+}
+header{
+    height: 30vh;
+    text-align: center;
+    align-content: center;
+    background-image: url(4th.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: white;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#pics_container{
+    padding: 5px;
+    display: flex;
+    justify-content:center;
+    background-color: #4b3e3e;
+}
+#pics_container p{
+    padding: 10px;
+}
+.lap{
+    padding: 10px;
+    border: 2px solid black;
+    width:300px;
+    margin: 1px;
+    background-color: white;
+    height: 60vh;
+    width: 33%;
+    padding: 0px;
+    }
+footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        grid-template-areas: 
+        "first first"
+        "contact about"
+        "final final"
+    }
+#first_footer{
+        grid-area:first;
+    }
+#contact{
+        background-color: rgb(53, 188, 241);
+        color:white;
+        grid-area:contact;
+    }
+#about{
+        background-color: #4b3e3e;
+        color: white;
+        grid-area:about;
+    }
+#final_div{
+        background-color: black;
+        color: white;
+        grid-area: final;
+    }
+div{
+        text-align: center;
+    }
+button{
+        background-color: #1d0b0b;
+        color:white;
+        padding:10px;
+        border:2px solid white;
+        border-radius: 6px;
+    }
+button:hover{
+        background-color: white;
+        color: black;
+        scale:1.2;
+        border: 2px solid rgb(85, 58, 205);
+        cursor: pointer;
+    }   
+#par1{
+        padding-bottom: 10px;
+    }
+span{
+        color: blue;
+    }
+p, h2{
+    padding: 5px;
+}    
+@media (max-width:425px){
+ h1{
+    font-size:15px;
+  }
+  h2{
+    font-size: 12px;
+  }
+  h3{
+    font-size: 10px;
+    padding: 2px;
+  }
+
+  p{
+    font-size:8px;
+  }
+  button{
+    font-size: 8px;
+    padding:5px;
+  }
+  .lap{
+    height:200px;
+  }
+}
+@media (max-width:768px){
+    h1{
+       font-size:17px;
+     }
+     h2{
+       font-size: 14px;
+     }
+     h3{
+       font-size: 12px;
+       padding: 2px;
+     }
+   
+     p{
+       font-size:10px;
+     }
+     button{
+       font-size: 10px;
+       padding:5px;
+     }
+     .lap{
+       height:250px;
+     }
+   }
